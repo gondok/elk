@@ -13,7 +13,6 @@ services:
      - "9300:9300"
    environment:
      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-     ELASTIC_PASSWORD: secret
      discovery.type: single-node
    networks:
      - elk_stack
